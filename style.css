@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login{
+    
+   text-align: center;
+   margin-top: 20px;
+   font-size: 100%;
+   
+    
+}
+.login a{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin: 1%;
+    background-color: chocolate;
+    border-radius: 60px;
+}
+
+.login button{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin: 1%;
+    background-color: chocolate;
+    border-radius: 60px;
+}
+
+.login a:hover{
+    background: #9CBE5F;
+    border-radius: 60px;
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.nav-link:hover{
+    color: black;
+}
+.search{
+    height: 40px;
+    width: 190px;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid chocolate;
+
+}
+
+.btn0{
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: chocolate;
+    color: white;
+    font-size: 700;
+    
+}
+.main{
+    background: url(imagenes/alvan-nee-lvFlpqEvuRM-unsplash.jpg )no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    
+    
+
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    
+    
+
+}
+
+.boton{
+    height: 45px;
+    width: 35%;
+    
+    border: none;
+    outline: none;
+    background-color: #9CBE5F;
+    color: white;
+    font-weight: 600;
+    border-radius: 60px;
+
+}
+.boton:hover{
+    background-color:chocolate ;
+    transition: 0.5s;
+}
+
+h1{
+    font-weight: 700;
+    
+
+}
+.Productos{
+    cursor: pointer;
+    padding-top: 5%;
+}
+
+.card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+.compra{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.titulo{
+    position: absolute;
+    margin-top: 3%;
+    font-size: 2.5em;
+    color: #3A035B;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    
+    
+}
+
+
+
+.card2{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 2%;
+    margin-top: 10%;
+    
+}
+.card2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .2s;
+
+}
+.card2 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #00000080;
+
+}
+.card2 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card2 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    color: #fff;
+    background: #00000080;
+    text-align: center;
+}
+.card2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #bbb2d8;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #0b1522;
+}
+.card2 .back a{
+    color: #ff7300;
+
+}
+
+.card2 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card2 .back p{
+    letter-spacing: .5px;
+    margin-top: 18%;
+}
+.card2:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+.card2:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+
+}
+
+
+.seccion{
+   width: 100%;
+   height: 100%;
+   text-align: center;
+  
+}
+.titulo2{
+    margin-top: 3%;
+    font-size: 2.5em;
+    color: #3A035B;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+
+}
+.contenedor2{
+    display: inline-block;
+    margin: 50px;
+    
+    
+}
+
+.contenedor2 figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0px 5px 25px rgb(138, 133, 133);
+    cursor: pointer;
+
+}
+.contenedor2 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: #9CBE5F;
+    
+    
+}
+.container3 {
+    text-align: center;
+    padding:100px;
+    gap:10px;
+    width: 1000px;
+    
+    
+}
+.container3 h1{
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.box-info {
+    color:black;
+    
+}
+
+.data{
+    margin: 5%;
+}
+
+.data > p {
+    font-size: 1rem;
+    display: inline;
+    padding: 2%;
+    
+}
+
+.data > p > i {
+    color:#3A035B;
+    font-size:25px;
+}
+
+
+
+.links {
+    text-align: center;
+    gap:15px;
+    
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #3A035B;
+    padding: 2%;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+    margin-top: 10%;
+}
+
+
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255, 255, 255, 0.37);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:black;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#4b4a4a;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #3A035B;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background:  rgba(255, 255, 255, 0.37);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:black;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(51, 50, 50, 0.459);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:#3A035B;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #3A035B;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form button:hover,
+.links > a:hover {
+    background: chocolate;
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+
+@media screen and (max-width:600px) {
+    .container3 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+.footer-bottom{
+    background: chocolate;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    margin-top: 1%;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.slider {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
